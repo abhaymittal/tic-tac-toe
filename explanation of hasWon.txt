@@ -1,0 +1,18 @@
+To speed up the bot, we create winning patterns for the arena. Since there are 54 4-in-a-line patterns, we create 54 patterns.
+
+The following is the principle to create the winning pattern:
+
+													0	1	2	3	4	5	
+													6	7	8	9	10	11
+													12	13	14	15	16	17
+													18	19	20	21	22	23
+													24	25	26	27	28	29
+													30	31	32	33	34	35
+													
+
+A possible winning pattern is that of cells 0,1,2 and 3....
+so we turn the bits no. 0 , 1 ,2 and 3 of a long int in java(64 bit) to create a pattern
+this creates 0b000000000000000000000000000000001111
+
+the haswon puts a one on all the bits which have player's color on them and then ands them with a winning pattern.... If the winning pattern is obtained then it means the player won
+

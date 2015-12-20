@@ -1,0 +1,7 @@
+add board class
+
+add constructor to cell
+paint function to cell// not needed for bot
+constructor to AIPlayer
+
+changed evaluate antiDiag function
